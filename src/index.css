@@ -1,0 +1,51 @@
+@import "tailwindcss";
+
+:root {
+  /* for color shed */
+  --primary-color: #000000;
+  --secondary-color: #39db4a;
+  --tarnary-color: #4a4a4a;
+  --quaternary-color: #ff6868;
+  --quinary-color: #ffffff;
+  /* font family */
+  --font-family-poppins: "Poppins", sans-serif;
+  --font-family-inter: "Inter", sans-serif;
+}
+
+@theme {
+  /* for color shed */
+  --color-primary: var(--primary-color);
+  --color-secondary: var(--secondary-color);
+  --color-tarnary: var(--tarnary-color);
+  --color-quaternary: var(--quaternary-color);
+  --color-quinary: var(--quinary-color);
+  /* for font family */
+
+  --font-poppins: var(--font-family-poppins);
+  --font-inter: var(--font-family-inter);
+}
+
+.h1 {
+  @apply font-extrabold text-[62px]/[145.5%] font-inter;
+}
+.h2 {
+  @apply font-bold text-[60px] font-inter;
+}
+.h6 {
+  @apply font-semibold text-[30px] font-inter;
+}
+.p1 {
+  @apply font-medium text-[26px]/[170%] font-inter;
+}
+.p2 {
+  @apply font-medium text-[24px] font-inter;
+}
+.p2.b {
+  @apply font-bold text-[24px] font-inter;
+}
+.p3 {
+  @apply font-medium text-[22px] font-inter;
+}
+.p4 {
+  @apply font-semibold text-[20px] font-inter;
+}
