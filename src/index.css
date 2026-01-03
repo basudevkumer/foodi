@@ -4,7 +4,10 @@
   /* for color shed */
   --primary-color: #000000;
   --secondary-color: #39db4a;
+  --secondary2-color: #edffef;
+  --secondary3-color: #8eff9a;
   --tarnary-color: #4a4a4a;
+  --tarnary2-color: #555555;
   --quaternary-color: #ff6868;
   --quinary-color: #ffffff;
   /* font family */
@@ -16,36 +19,73 @@
   /* for color shed */
   --color-primary: var(--primary-color);
   --color-secondary: var(--secondary-color);
+  --color-secondary2: var(--secondary2-color);
+  --color-secondary3: var(--secondary3-color);
   --color-tarnary: var(--tarnary-color);
+  --color-tarnary2: var(--tarnary2-color);
   --color-quaternary: var(--quaternary-color);
   --color-quinary: var(--quinary-color);
   /* for font family */
 
   --font-poppins: var(--font-family-poppins);
   --font-inter: var(--font-family-inter);
+  /*for animations*/
+  --animate-blinking: updown 1s ease-in-out infinite;
 }
 
-.h1 {
-  @apply font-extrabold text-[62px]/[145.5%] font-inter;
+@layer base {
+  @keyframes updown {
+    0% {
+      width: 20px;
+    }
+    50% {
+      width: 10px;
+    }
+  }
 }
-.h2 {
-  @apply font-bold text-[60px] font-inter;
-}
-.h6 {
-  @apply font-semibold text-[30px] font-inter;
-}
-.p1 {
-  @apply font-medium text-[26px]/[170%] font-inter;
-}
-.p2 {
-  @apply font-medium text-[24px] font-inter;
-}
-.p2.b {
-  @apply font-bold text-[24px] font-inter;
-}
-.p3 {
-  @apply font-medium text-[22px] font-inter;
-}
-.p4 {
-  @apply font-semibold text-[20px] font-inter;
+
+@layer utilities {
+  .h1 {
+    @apply font-extrabold text-[62px]/[145.5%];
+  }
+
+  .h2 {
+    @apply font-bold text-[60px];
+  }
+
+  .h6 {
+    @apply font-semibold text-[30px];
+  }
+
+  .p1 {
+    @apply font-medium text-[26px]/[170%];
+  }
+
+  .p2 {
+    @apply font-medium text-[24px];
+  }
+
+  .p2s {
+    @apply font-semibold text-[26px];
+  }
+
+  .p2b {
+    @apply font-bold text-[24px];
+  }
+
+  .p3 {
+    @apply font-medium text-[22px];
+  }
+
+  .p4 {
+    @apply font-semibold text-[20px];
+  }
+
+  .p5 {
+    @apply font-medium text-[20px];
+  }
+  /*for animations*/
+  .blingkingAni {
+    animation: var(--animate-blinking);
+  }
 }
