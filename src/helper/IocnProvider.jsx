@@ -8,8 +8,14 @@ import { FiFacebook } from "react-icons/fi";
 import { FaInstagram } from "react-icons/fa";
 import { TfiTwitter } from "react-icons/tfi";
 import { AiOutlineYoutube } from "react-icons/ai";
+import { FaStar } from "react-icons/fa6";
+import { FaChevronRight } from "react-icons/fa6";
+import { FaChevronLeft } from "react-icons/fa6";
+
 
 const allIcon = {
+  chevronIconRight: <FaChevronRight />,
+  chevronIconLeft: <FaChevronLeft />,
   chevronIconDown: <FaChevronDown />,
   chevronIconUp: <FaChevronUp />,
   searchIcon: <IoSearchOutline />,
@@ -21,6 +27,7 @@ const allIcon = {
     { id: 3, icon: <TfiTwitter /> },
     { id: 4, icon: <AiOutlineYoutube /> },
   ],
+  star: <FaStar />,
 };
 
 export default allIcon;

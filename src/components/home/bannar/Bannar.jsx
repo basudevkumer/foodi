@@ -50,7 +50,7 @@ const Bannar = () => {
               </figure>
 
              
-                <img src={cili} alt="cili"  className="absolute top-[50px] left-[-150px]" />
+                <img src={cili} alt="cili"  className="absolute top-[50px] left-[-150px] move" />
                 <img src={dish1} alt="dish1"  className="absolute bottom-[-170px] left-[-100px]"/>
                 <img src={dish2} alt="dish2" className="absolute bottom-[-170px] right-[-100px]" />
           

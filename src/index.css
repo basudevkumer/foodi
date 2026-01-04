@@ -31,6 +31,7 @@
   --font-inter: var(--font-family-inter);
   /*for animations*/
   --animate-blinking: updown 1s ease-in-out infinite;
+  --animate-leftright: move 2s ease-in-out infinite;
 }
 
 @layer base {
@@ -40,6 +41,14 @@
     }
     50% {
       width: 10px;
+    }
+  }
+  @keyframes move {
+    0% {
+      left: -150px;
+    }
+    50% {
+      left: -170px;
     }
   }
 }
@@ -84,8 +93,16 @@
   .p5 {
     @apply font-medium text-[20px];
   }
+  .p6 {
+    @apply font-bold text-[20px]/[17.5%];
+  }
   /*for animations*/
   .blingkingAni {
     animation: var(--animate-blinking);
   }
+  .move {
+    animation: var(--animate-leftright);
+  }
 }
+
+
