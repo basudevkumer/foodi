@@ -46,7 +46,7 @@ const SpecialDish = () => {
                       <figure className="pb-6">
                         <img
                           src={items.imageUrl}
-                          className="h-[276px] w-[276px] object-fit"
+                          className="h-[276px] w-[276px] object-cover"
                           alt={items.imageUrl}
                         />
                       </figure>

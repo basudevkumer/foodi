@@ -3,6 +3,7 @@ import Navbar from "../../commonComponents/Navbar";
 import Bannar from "../bannar/Bannar";
 import Category from "../../commonComponents/Category";
 import SpecialDish from "../../specialDish/SpecialDish";
+import Testimonial from "../testimonials/Testimonial";
 
 const HomeMain = () => {
   return (
@@ -10,6 +11,7 @@ const HomeMain = () => {
       <Bannar />
       <Category />
       <SpecialDish />
+      <Testimonial/>
     </>
   );
 };

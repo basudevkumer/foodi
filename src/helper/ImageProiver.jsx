@@ -11,6 +11,13 @@ import CategoryImage4 from "../assets/images/categoryImage4.png";
 import SpecialDImg1 from "../assets/images/special1.png";
 import SpecialDImg2 from "../assets/images/special2.png";
 import SpecialDImg3 from "../assets/images/special3.png";
+import ChefImage from "../assets/images/chef-img.png";
+import Happy from "../assets/images/happy-imge.png";
+import BestChef from "../assets/images/bestChef.png";
+import Pizza from "../assets/images/pizza.png";
+import ClientOne from "../assets/images/client1.png";
+import ClientTwo from "../assets/images/client2.png";
+import ClientThree from "../assets/images/client3.png";
 
 const allImages = {
   navImage: NavbarImage,
@@ -29,6 +36,29 @@ const allImages = {
     { id: 1, images: SpecialDImg1 },
     { id: 2, images: SpecialDImg2 },
     { id: 3, images: SpecialDImg3 },
+  ],
+  chefImg: ChefImage,
+  tesmonialAnimtImg: [
+    { id: 1, images: Happy },
+    { id: 2, images: Pizza },
+    { id: 3, images: BestChef },
+  ],
+  clinettesmonial: [
+    {
+      id: 1,
+      images: ClientOne,
+      className: " left-0 top-0 absolute  z-0 ",
+    },
+    {
+      id: 2,
+      images: ClientTwo,
+      className: " left-0 top-0 absolute z-10 move5 ",
+    },
+    {
+      id: 3,
+      images: ClientThree,
+      className: "left-0 top-0 absolute z-20 move6",
+    },
   ],
 };
 

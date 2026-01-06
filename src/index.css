@@ -32,6 +32,11 @@
   /*for animations*/
   --animate-blinking: updown 1s ease-in-out infinite;
   --animate-leftright: move 2s ease-in-out infinite;
+  --animate-leftright2: move2 2s ease-in-out infinite;
+  --animate-leftright3: move3 2s ease-in-out infinite;
+  --animate-leftright4: move4 3s ease-in-out infinite;
+  --animate-leftright5: move5 3.5s ease-in-out infinite;
+  --animate-leftright6: move6 3.5s ease-in-out infinite;
 }
 
 @layer base {
@@ -49,6 +54,47 @@
     }
     50% {
       left: -170px;
+    }
+  }
+  @keyframes move2 {
+    0% {
+      left: 0;
+    }
+    50% {
+      left: 15px;
+    }
+  }
+  @keyframes move3 {
+    0% {
+      right: -24px;
+    }
+    50% {
+      right: -36px;
+    }
+  }
+  @keyframes move4 {
+    0% {
+      right: -95px;
+    }
+    50% {
+      right: -110px;
+    }
+  }
+
+  @keyframes move5 {
+    0% {
+      left: 0px;
+    }
+    50% {
+      left: 70px;
+    }
+  }
+  @keyframes move6 {
+    0% {
+      left: 0px;
+    }
+    50% {
+      left: 140px;
     }
   }
 }
@@ -103,6 +149,19 @@
   .move {
     animation: var(--animate-leftright);
   }
+  .move2 {
+    animation: var(--animate-leftright2);
+  }
+  .move3 {
+    animation: var(--animate-leftright3);
+  }
+  .move4 {
+    animation: var(--animate-leftright4);
+  }
+  .move5 {
+    animation: var(--animate-leftright5);
+  }
+  .move6 {
+    animation: var(--animate-leftright6);
+  }
 }
-
-

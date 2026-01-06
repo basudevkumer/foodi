@@ -28,6 +28,7 @@ const allIcon = {
     { id: 4, icon: <AiOutlineYoutube /> },
   ],
   star: <FaStar />,
+  
 };
 
 export default allIcon;
