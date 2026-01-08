@@ -4,6 +4,7 @@ import Bannar from "../bannar/Bannar";
 import Category from "../../commonComponents/Category";
 import SpecialDish from "../../specialDish/SpecialDish";
 import Testimonial from "../testimonials/Testimonial";
+import Story from "../story/Story";
 
 const HomeMain = () => {
   return (
@@ -12,6 +13,7 @@ const HomeMain = () => {
       <Category />
       <SpecialDish />
       <Testimonial/>
+      <Story/>
     </>
   );
 };

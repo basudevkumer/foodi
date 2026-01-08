@@ -16,8 +16,14 @@ import allIcon from "../../helper/IocnProvider";
 import { specialItems } from "../../helper/ProjectArrObj";
 
 const SpecialDish = () => {
-  const { star, chevronIconRight, chevronIconLeft } = allIcon;
+  const { star, chevronIconRight, chevronIconLeft, heart } = allIcon;
 
+  //for state management
+  const [light, setLight] = useState(null);
+
+  const handleClicked = (id) => {
+    setLight(prev=> prev === id ? null : id);
+  };
   return (
     <section className="pb-[221px]">
       <Container>
@@ -39,10 +45,17 @@ const SpecialDish = () => {
                 prevEl: ".swiper-button-prev",
               }}
             >
-              {specialItems.map((items, index) => {
+              {specialItems.map((items) => {
+                const isActive = light === items.id
                 return (
                   <SwiperSlide>
-                    <div className=" rounded-[20px] py-[38px] px-[46px] shadow-xl cursor-pointer easy-in-out ">
+                    <div className=" rounded-[25px] py-[38px] px-[46px] shadow-xl cursor-pointer easy-in-out relative  overflow-hidden" key={items.id}>
+                      <div
+                        className="absolute top-0 right-0 w-[60px] h-[60px] bg-secondary rounded-bl-full "
+                        onClick={()=>handleClicked(items.id)}
+                      >
+                        <span className="absolute top-1/2 left-[38%] -translate-y-1/2 text-xl text-quinary">{isActive ? heart[1].icon : heart[0].icon}</span>
+                      </div>
                       <figure className="pb-6">
                         <img
                           src={items.imageUrl}

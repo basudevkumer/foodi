@@ -1,6 +1,8 @@
 import allImages from "./ImageProiver";
+import allIcon from "./IocnProvider";
 
 const { categoryImages, specialDimage } = allImages;
+const { stroyIcon } = allIcon;
 
 const navbarArr = [
   { id: 1, name: "Home", to: "home", icon: false },
@@ -111,4 +113,30 @@ const specialItems = [
   },
 ];
 
-export { navbarArr, footerColumns, menuCategories,specialItems };
+const storCardArray = [
+  {
+    id: 1,
+    icon: stroyIcon[0].icon,
+    title: "CATERING",
+    description: "Delight your guests with our flavors and presentation",
+  },
+  {
+    id: 2,
+    icon: stroyIcon[1].icon,
+    title: "FAST DELIVERY",
+    description: "We deliver your order promptly to your door",
+  },
+  {
+    id: 3,
+    icon: stroyIcon[2].icon,
+    title: "ONLINE ORDERING",
+    description: "Explore menu & order with ease using our Online Ordering",
+  },
+  {
+    id: 4,
+    icon: stroyIcon[3].icon,
+    title: "GIFT CARDS",
+    description: "Give the gift of exceptional dining with Foodi Gift Cards",
+  },
+];
+export { navbarArr, footerColumns, menuCategories, specialItems, storCardArray };

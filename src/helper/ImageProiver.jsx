@@ -19,6 +19,8 @@ import ClientOne from "../assets/images/client1.png";
 import ClientTwo from "../assets/images/client2.png";
 import ClientThree from "../assets/images/client3.png";
 
+
+
 const allImages = {
   navImage: NavbarImage,
   triangleImage: TriangleImage,
@@ -60,6 +62,7 @@ const allImages = {
       className: "left-0 top-0 absolute z-20 move6",
     },
   ],
+ 
 };
 
 export default allImages;
