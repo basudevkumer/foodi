@@ -101,46 +101,47 @@
 
 @layer utilities {
   .h1 {
-    @apply font-extrabold text-[62px]/[145.5%];
+    @apply font-extrabold text-[clamp(32px,5vw,62px)]/[145.5%];
   }
 
   .h2 {
-    @apply font-bold text-[60px];
+    @apply font-bold text-[clamp(28px,4.5vw,60px)]/[130%];
   }
 
   .h6 {
-    @apply font-semibold text-[30px];
+    @apply font-semibold text-[clamp(20px,2.5vw,30px)]/[140%];
   }
 
   .p1 {
-    @apply font-medium text-[26px]/[170%];
+    @apply font-medium text-[clamp(16px,2vw,26px)]/[170%];
   }
 
   .p2 {
-    @apply font-medium text-[24px];
+    @apply font-medium text-[clamp(14px,1.8vw,24px)]/[160%];
   }
 
   .p2s {
-    @apply font-semibold text-[26px];
+    @apply font-semibold text-[clamp(15px,1.9vw,26px)]/[160%];
   }
 
   .p2b {
-    @apply font-bold text-[24px];
+    @apply font-bold text-[clamp(14px,1.8vw,24px)]/[160%];
   }
 
   .p3 {
-    @apply font-medium text-[22px];
+    @apply font-medium text-[clamp(13px,1.6vw,22px)]/[160%];
   }
 
   .p4 {
-    @apply font-semibold text-[20px];
+    @apply font-semibold text-[clamp(13px,1.5vw,20px)]/[155%];
   }
 
   .p5 {
-    @apply font-medium text-[20px];
+    @apply font-medium text-[clamp(13px,1.5vw,20px)]/[155%];
   }
+
   .p6 {
-    @apply font-bold text-[20px]/[17.5%];
+    @apply font-bold text-[clamp(13px,1.5vw,20px)]/[17.5%];
   }
   /*for animations*/
   .blingkingAni {
