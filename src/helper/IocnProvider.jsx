@@ -17,8 +17,8 @@ import { GiFruitBowl } from "react-icons/gi";
 import { GiClockwork } from "react-icons/gi";
 import { FaCartArrowDown } from "react-icons/fa";
 import { FaGifts } from "react-icons/fa6";
-
-
+import { FaBars } from "react-icons/fa6";
+import { IoMdClose } from "react-icons/io";
 
 const allIcon = {
   chevronIconRight: <FaChevronRight />,
@@ -35,17 +35,18 @@ const allIcon = {
     { id: 4, icon: <AiOutlineYoutube /> },
   ],
   star: <FaStar />,
-   heart:[
-    {id:1, icon: <FaRegHeart/>},
-    {id:2, icon: <FaHeart/>},
-  ]
-  ,
-  stroyIcon :  [
-    {id:1, icon:<GiFruitBowl/>},
-    {id:2, icon:<GiClockwork/>},
-    {id:3, icon:<FaCartArrowDown/>},
-    {id:4, icon:<FaGifts/>},
-  ]
+  heart: [
+    { id: 1, icon: <FaRegHeart /> },
+    { id: 2, icon: <FaHeart /> },
+  ],
+  stroyIcon: [
+    { id: 1, icon: <GiFruitBowl /> },
+    { id: 2, icon: <GiClockwork /> },
+    { id: 3, icon: <FaCartArrowDown /> },
+    { id: 4, icon: <FaGifts /> },
+  ],
+  menuIcon: <FaBars />,
+  closeIcon: <IoMdClose />,
 };
 
 export default allIcon;
